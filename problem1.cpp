@@ -17,10 +17,10 @@
 #include <random>
 using namespace std;
 
-// The variable representing whether there is a cupcake on the plate must be accessed atomically, as it may be accessed and/or changed by multiple threads.
+// This variable will represent whether there is a cupcake on the plate.
 bool cupcake_on_plate = true;
 
-// This variable will represent whether the guests think they have all visited the labyrinth. This also must be accessed atomically.
+// This variable will represent whether the guests think they have all visited the labyrinth.
 bool all_visited = false;
 
 // For this example, we will use N=5.
